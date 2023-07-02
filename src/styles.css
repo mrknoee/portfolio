@@ -1,0 +1,145 @@
+:root {
+    --bg-color: linear-gradient(130.6deg,#0e294b 11.5%,#17002d 91.2%);
+    --container-color: #0D1A37;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    background: var(--bg-color);
+  }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto; 
+    padding: 2px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+  
+.nav-brand a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size:2rem;
+}
+  
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+  
+.nav-item {
+    list-style-type: none;
+    margin: 10px 30px;
+}
+  
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    font-size: 1rem;
+
+}
+.nav-link:after{
+    content: "";
+    position: absolute;
+    background-color: rgba(93, 63, 211, 0.7);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: #ffffff;
+}
+.nav-link:hover:after{
+    width: 100%;
+}
+
+/* Home */
+
+.intro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.greetings, .intro-name{
+    font-size: 2.25rem; 
+    text-align: center;
+    background-image: linear-gradient(179.1deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.8) );
+    font-weight: 600; 
+    color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.short-info.hide{
+    opacity: 0;
+}
+.short-info {
+    background-color: var(--container-color);
+    color: #fff;
+    width: 450px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5;
+    position: relative;
+    border: none;
+    margin-top: 20px;
+    transition: opacity 0.5s ease;
+    background: linear-gradient(to bottom, rgba(93, 63, 211, 0.9), rgba(93, 63, 291, 0.3) );
+
+  }
+
+.intro-icons.hide{
+    opacity: 0;
+}
+.intro-icons{
+    display: flex;
+    flex-direction: row;
+    transition: opacity 0.5s ease;
+}
+
+
+.icons{
+    color:  rgba(255, 255, 255, 0.8) ;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.icons:hover{
+    color: rgba(93, 63, 211, 0.8)
+}
+
+/* about */
+
