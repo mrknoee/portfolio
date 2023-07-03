@@ -9,7 +9,7 @@ export default function Home() {
   const introText = "Hi, I'm";
   const nameText = "Mark Noe Fetero";
   const infoText =
-    "A dedicated and enthusiastic student with a strong passion for web development, aspiring to become a skilled and versatile web developer";
+    "A dedicated and enthusiastic student with a strong passion for web development, aspiring to become an expert and versatile web developer.";
 
   useEffect(() => {
     let introIndex = 0;
@@ -64,23 +64,31 @@ export default function Home() {
 
   return (
     <>
-      <div className="home">
-        <div className="stars"></div>
+      <div className="home" id="Home">
         <div className="intro">
           <p className={`greetings ${showTypewriter ? "typewriter" : ""}`}></p>
           <p className={`intro-name ${showTypewriter ? "typewriter" : ""}`}></p>
           <div className={`short-info ${showInfoText ? "" : "hide"}`}>
             {infoText}
           </div>
-          <div  className={`intro-icons ${showInfoText ? "" : "hide"}`}>
-            <a href="https://www.facebook.com/marknoe.fetero/" target="_blank">
-               <IconBrandFacebook className="icons" />
+          <div className={`intro-icons ${showInfoText ? "" : "hide"}`}>
+            <a
+              href={showInfoText ? "https://www.facebook.com/marknoe.fetero/" : null}
+              target="_blank"
+            >
+              <IconBrandFacebook size={28} className="icons" />
             </a>
-            <a href="https://github.com/mrknoee?tab=repositories" target="_blank">
-            <IconBrandGithub  className="icons" />
+            <a
+              href={showInfoText ? "https://github.com/mrknoee?tab=repositories" : null}
+              target="_blank"
+            >
+              <IconBrandGithub size={28} className="icons" />
             </a>
-            <a href="https://www.linkedin.com/in/mark-noe-fetero-44b768254/" target="_blank">
-            <IconBrandLinkedin className="icons"/>
+            <a
+              href={showInfoText ? "https://www.linkedin.com/in/mark-noe-fetero-44b768254/" : null}
+              target="_blank"
+            >
+              <IconBrandLinkedin size={28} className="icons" />
             </a>
           </div>
           <div  className={`scrolldown ${showscrollDown ? "" : "hide"}`}>

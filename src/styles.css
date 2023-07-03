@@ -1,5 +1,5 @@
 :root {
-    --bg-color: linear-gradient(130.6deg,#0e294b 11.5%,#17002d 91.2%);
+    --bg-color: linear-gradient(110deg,#0e294b 11.5%,#17002d 91.2%);
     --container-color: #0D1A37;
   }
 
@@ -16,16 +16,21 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    width: 90%;
-    margin: 0 auto; 
+    width: 85%;
+    margin: 1rem auto; 
     padding: 2px 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px;
-    z-index: 1;
+    border-radius: 20px;
+    z-index: 999;
+    /* background: rgba(0, 0, 0, 0.2); */
+    background: #0E1231;
+  
 }
+
+
 
   
 .nav-brand a {
@@ -40,15 +45,18 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-
-
 }
   
 .nav-item {
     list-style-type: none;
-    margin: 10px 30px;
+    margin: 0.5rem 2rem;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
-  
+
+
+.nav-item span{
+  display: none;
+}
 .nav-link {
     position: relative;
     text-decoration: none;
@@ -77,10 +85,7 @@ body {
 /* Home */
 
 .intro {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -5%);
     height: 100vh;
     font-size: 60px;
     display: flex;
@@ -91,7 +96,7 @@ body {
 }
 
 .greetings, .intro-name{
-    font-size: 2.25rem; 
+    font-size: 2.7rem; 
     text-align: center;
     background-image: linear-gradient(179.1deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.8) );
     font-weight: 600; 
@@ -105,17 +110,16 @@ body {
     opacity: 0;
 }
 .short-info {
-    background-color: var(--container-color);
     color: #fff;
-    width: 450px;
+    max-width: 450px;
     padding: 20px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: justify;
     line-height: 1.5;
     position: relative;
     border: none;
-    margin-top: 20px;
+    margin-top: 1rem;
     transition: opacity 0.5s ease;
     background: linear-gradient(to bottom, rgba(93, 63, 211, 0.9), rgba(93, 63, 291, 0.3) );
 
@@ -133,13 +137,568 @@ body {
 
 .icons{
     color:  rgba(255, 255, 255, 0.8) ;
-    margin: 20px;
+    margin: 1.4rem;
     cursor: pointer;
 }
 
-.icons:hover{
+.icons:hover,
+.nav-icons:hover{
     color: rgba(93, 63, 211, 0.8)
 }
 
+
 /* about */
+.tagtitle{
+    font-size: 2rem; 
+    text-align: center;
+    background-image: linear-gradient(179.1deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.8) );
+    font-weight: 600; 
+    color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 4rem 0;
+}
+
+.about{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+   
+}
+
+.about-info{
+    border-radius: 20px;
+    max-width: 60rem;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+    opacity: 0.9;
+    position: relative;
+}
+
+.blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(124, 58, 237, 0.2) 0%,
+      rgba(152, 103, 240, 0.2) 50%,
+      rgba(14, 41, 75, 0.2) 100%
+    );
+    border-radius: 20px;
+  }
+  
+.introduction{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: 400; 
+    padding: 25px 30px;
+    /* color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(179.1deg, rgb(255, 255, 255), rgba(255, 255, 255, 1) ); 
+    */
+    color: #fff;
+    /* z-index: 1; */
+}   
+
+.about-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    z-index: 1;
+    padding: 25px 30px;
+
+}
+
+.my-details{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+
+}
+
+
+
+
+.about-icons{
+  margin: 0 30px 0 30px;
+}
+
+
+.my-details label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+.resume-details{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.resume-button{
+    background: linear-gradient(to bottom, rgba(93, 63, 211, 0.9), rgba(93, 63, 291, 0.3) );
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+
+}
+
+.resume-button:hover{
+    opacity: 0.8;
+}
+
+/* Skills */
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0E1231;
+    border-radius: 30px;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+}
+.dev-skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.html-container,
+.css-container,
+.js-container,
+.react-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  height: 390px;
+  border-radius: 8px;
+  z-index: 1;
+  width: 220px;
+}
+
+.html-container {
+  background: linear-gradient(to bottom, rgba(228, 77, 37, 0.8), rgba(241, 101, 36, 0.3));
+}
+
+.css-container {
+  background: linear-gradient(to bottom, rgba(28, 136, 199, 0.8), rgba(27, 115, 186, 0.3));
+}
+
+.js-container {
+  background: linear-gradient(to bottom, rgba(234, 212, 28, 0.9), rgba(234, 212, 28, 0.5));
+}
+
+.react-container {
+  background: linear-gradient(to bottom, rgba(92, 207, 238, 1), rgba(4, 215, 255, 0.3));
+}
+
+
+.moredev-skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1.6rem;
+
+
+}
+
+.git-container, 
+.postman-container,
+.sql-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    height: 140px;
+    width: 10;
+    border-radius: 8px;
+    z-index: 1;
+    width: 240px;
+}
+
+.git-container{
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.9));
+}
+
+.postman-container{
+    background: linear-gradient(to bottom, rgba(246, 106, 59, 0.8), rgba(35, 45, 54, 0.5));
+}
+
+
+.sql-container{
+    background: linear-gradient(to bottom, rgba(0, 121, 214, 0.5), rgba(0, 121, 214, 0.4));
+}
+
+.moreskills-label{
+    margin:auto ;
+}
+
+
+
+.skills-logo{
+    height: 65px;
+    margin: auto;
+}
+
+/* Projects */
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
+}
+
+.project-1{
+    border-radius: 10px;
+    width: 60rem;
+    height: 550px;
+    /* padding: 35px 35px; */
+    padding: 0 25px;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+    opacity: 1;
+    position: relative;
+}
+
+
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: block;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+
+
+  }
+  .arrow{
+    border:  solid #0E1231;
+    border-width: 0 5px 5px 0;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background-size:cover;
+  }
+  .item-2 {
+    background-size: cover;
+  }
+  .item-3 {
+    background-size: cover;
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+
+  .upitem-1 {
+    z-index: 2;
+    opacity: 1;
+    background-size: cover;
+  }
+  .upitem-2 {
+    background-size: cover;
+  }
+  .upitem-3 {
+    background-size: cover;
+  }
+
+  [id^= "upitem"] {
+    display: none;
+  }
+  .upitem-1 {
+    z-index: 2;
+    opacity: 1;
+    background-size: cover;
+  }
+  .upitem-2 {
+    background-size: cover;
+  }
+  .upitem-3 {
+    background-size: cover;
+  }
+  
+  *:target ~ .upitem-1{
+    opacity: 0;
+  }
+  #upitem-1:target ~ .upitem-1 {
+    opacity: 1;
+  
+  }
+  #upitem-2:target ~ .upitem-2, #upitem-3:target ~ .upitem-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  
+  .project-details {
+    position: absolute;
+    color: #fff;
+    background: #5139BD;
+    bottom: 2%;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    width: 48% ;
+    height: 125px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:7px;
+  }
+  
+  .project-title{
+    font-size: 1.4rem;
+    background-image: linear-gradient(179.1deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.8) );
+    font-weight: 600; 
+    color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .project-info{
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  
+.git-icon{
+    color:  rgba(255, 255, 255, 0.8) ;
+    cursor: pointer;
+    padding-left: 10px;
+    height: 18px;
+}
+
+.git-icon:hover{
+    color:#0E1231;
+}
+
+.git-links{
+    font-size: 0.95rem;
+    color: #fff;
+}
+
+.more{
+    display: flex;
+    justify-content: center;
+}
+.more-projects{
+    border-radius: 10px;
+    max-width: 30rem;
+    padding: 25px 30px;
+    margin-bottom: 4rem;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+    opacity: 0.9;
+    position: relative;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-container{
+    border-radius: 10px;
+    width: 32rem;
+    padding: 35px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+    opacity: 1;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.contact-heading{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.contact-subheading{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.contact-form{
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.contact-form > div{
+    margin: 1rem 0;
+}
+
+.form-label{
+    padding-left: 1.6rem;
+}
+
+
+.sender-input{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.4rem;
+    display: block;
+    background: #0E1231;
+    color: #ffff;
+    font-size: 1rem;
+    font-family: "Montserrat";
+
+}
+
+
+.msg-input{
+    width: 90%;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0.4rem;
+    display: block;
+    background: #0E1231;
+    color: #ffff;
+    font-size: 1rem;
+    font-family: "Montserrat";
+
+
+}
+
+
+.sender-form{
+    width: 100%;
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0E1231;
+    width: 100%;
+    padding: 0.5rem 0;
+    color: #fff;
+}
+
+.footer-blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(124, 58, 237, 0.1) 0%,
+      rgba(152, 103, 240, 0.1) 50%,
+      rgba(14, 41, 75, 0.1) 100%
+    );
+  }
+
+.Toastify__toast{
+  background-color: #5139BD !important; 
+}
+E57373
+.Toastify__toast--error {
+  background-color: #E57373 !important; 
+}
+
+.Toastify__toast-body {
+  font-family:"Montserrat"!important; 
+}
 

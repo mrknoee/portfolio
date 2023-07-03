@@ -1,0 +1,273 @@
+@media screen and (max-width: 1100px){
+    .about-info{
+        max-width: 40rem;
+        width: 95%;
+        margin: 0 20px;
+    }
+   
+
+    .my-details{
+        flex-direction: column;
+       
+    }
+
+    .resume-button{
+        width: 45%;
+    }
+    
+    .my-details label{
+        margin-top: 8px ;
+
+    }
+    .about-details{
+       padding-top: 0;
+    }
+    .introduction{
+        padding-bottom: 0;
+    }
+    .html-container,
+    .css-container,
+    .js-container,
+    .react-container{
+        width: 155px;
+        height: 280px;
+    }
+
+    .git-container, 
+    .postman-container,
+    .sql-container{
+        width: 190px;
+        height: 115px;
+    }
+
+
+    .project-1 {
+        width: 60%; 
+        height: 500px;
+
+    }
+
+    .project-1 {
+        width: 90%;
+        height: auto;
+        padding: 25px 0;
+        font-size: 40px;
+      }
+    
+      .carousel-wrapper {
+        height: 50vw;
+      }
+    
+      .carousel-item {
+        padding: 10px 20px;
+      }
+    
+      .arrow
+      {
+        border-width: 0 3px 3px 0;
+        padding: 8px;
+
+      }
+    
+      .project-details {
+        width: 90%;
+        height: auto;
+        bottom: -30px;
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
+      }
+      .carousel-item {
+          padding: 0;
+          height: auto;
+        }
+      .project-1{
+          padding: 15px 15px;
+      }
+
+
+      
+  }
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+      width: 94%;
+      padding: 2px 2px;
+      justify-content: center;
+      border-radius:15px ;
+    }
+    .nav-item a{
+        display: none;
+    }
+    .nav-brand a{
+        display: none;
+    } 
+    .nav-item span{
+        display: block;
+    }
+    .navbar-nav{
+       margin: 0;
+       padding: 0;
+    }
+    
+    .nav-icons{
+        margin: 0 2rem;
+    }
+   
+  }
+
+  @media screen and (max-width: 765px) {
+    .nav-icons{
+        margin: 0 0.5rem;
+        height: 20px !important;
+    }
+    .short-info {
+        max-width: 320px;
+        margin: 5px 20px;
+        font-size: 0.8rem;
+
+    }
+    .greetings, .intro-name{
+        font-size: 1.5rem; 
+    }
+
+    .icons{
+        height: 20px !important;
+        margin-top: 0;
+    }
+
+    .scrolldown{
+        width: 20px;
+        height: 20px;
+    }
+
+    .tagtitle{
+        font-size: 1.3rem;
+    }
+
+    .introduction{
+        font-size: 1rem;
+    }
+    
+    .my-details label{
+        font-size: 0.8rem;
+       
+    }
+    .introduction{
+        padding: 15px 20px;
+    }
+    
+    .resume-button{
+        width: 100px !important;
+        font-size: 0.8rem;
+    }
+    .dev-skills,
+    .moredev-skills {
+        width: 70%;
+        font-size: 0.8rem;
+      }
+
+      .skills-logo{
+        height: 40px;
+    }
+
+    .skills{
+        border-radius: 10px;
+    }
+
+    .project-title,
+    .more-projects,
+    .contact-heading
+    {
+        font-size: 1rem;
+    }
+    .project-link,
+    .project-info
+    {
+        font-size: 0.7rem;
+    }
+
+    .project-details {
+        width: 70%;
+        bottom: -70px;
+      }
+      
+      .about-icons{
+        height: 20px;
+      }
+    
+      .git-icon{
+        height: 15px;
+      }
+
+      .contact-container{
+        width: 75%;
+        border-radius: 12px;
+
+      }
+      .contact-subheading,
+      .form-label,
+      .footer{
+        font-size: 0.8rem;
+      }
+      .contact-form > div{
+        margin: 0.6rem 0;
+    }
+    .about-info{
+       border-radius: 12px;
+    }
+
+    .footer{
+        padding: 0.3rem 0;
+    }
+  }
+
+ 
+
+  @media screen and (max-width: 549px) {
+    .nav-icons{
+        margin: 0;
+        padding: 0;
+        height: 15px !important;
+    }
+
+    .nav-item{
+        margin: 0.6rem 1.3rem;
+    }
+
+    .introduction{
+        font-size: 0.8rem;
+    }
+
+    .my-details label{
+        font-size: 0.8rem;
+    }
+    .dev-skills {
+        width: 90%;
+      }
+    
+    .html-container,
+    .css-container,
+    .js-container,
+    .react-container{
+        width: 140px;
+        height: 240px;
+    }
+    
+    
+  }
+
+  @media screen and (max-width: 380px) {
+
+
+    .introduction{
+        padding: 10px 15px;
+    }
+
+    .my-details label{
+        display: flex;
+        flex-direction: column;
+
+    }
+   
+  }
+
