@@ -37,8 +37,8 @@ export default function Hangman(){
             </a>
             </div>
             <div className="project-info">
-            A word-guessing game inspired by the movie "Up," where players suggest letters to identify a word where I contributed 
-            to the audio sound effects and modals. 
+            A word-guessing game inspired by the movie "Up," where players suggest letters to identify a word. In this project I implemented 
+            the audio sound effects and modals of the game. 
             </div>
             <div className="git-links">
             <a href="https://hangman-balloon-ten.vercel.app/" target="_blank"  className = "project-link" style={{color:"#fff"}}>hangman.app</a>
