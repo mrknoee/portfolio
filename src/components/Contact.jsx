@@ -40,7 +40,7 @@ export default function Contact(){
 
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
             <div className="sender-form">
-                <label for="name" className="form-label">Your name: </label><br/><br/>
+                <label  className="form-label">Your name: </label><br/><br/>
                 <input type="text" name="user_name" className="sender-input" autoComplete="new-password" required>
                 </input>
             </div>

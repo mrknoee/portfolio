@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { IconBrandFacebook, IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
 
 
-export default function Home() {
+export default function Home(props) {
+
   const [showTypewriter, setShowTypewriter] = useState(false);
   const [showInfoText, setShowInfoText] = useState(false);
   const [showscrollDown, setShowScrollDown] = useState(false);
@@ -42,7 +43,8 @@ export default function Home() {
             setShowInfoText(true);
             setTimeout(() => {
               setShowScrollDown(true);
-              document.body.style.overflow = "auto"; // Enable scrolling after typewriter effect
+              document.body.style.overflow = "auto";
+              props.setNavbarEnabled(true);
             }, 1500);
           }
         };
@@ -52,10 +54,10 @@ export default function Home() {
     };
 
     setTimeout(typeWriter, 1000);
-    document.body.style.overflow = "hidden"; // Disable scrolling during typewriter effect
+    document.body.style.overflow = "hidden"; 
 
     return () => {
-      document.body.style.overflow = "auto"; // Reset to default scrolling behavior
+      document.body.style.overflow = "auto";
     };
     
   }, []);

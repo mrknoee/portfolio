@@ -1,15 +1,18 @@
 import { IconSmartHome, IconInfoSquare, IconToolsOff, IconAlignBoxCenterStretch, IconMessage2Bolt} from '@tabler/icons-react';
 import { scroller } from 'react-scroll';
 
-export default function Navbar() {
+export default function Navbar(props) {
 
-  const handleClick = (componentId) => {
-    scroller.scrollTo(componentId, {
-      smooth: true,
-      offset: -50,
-      duration: 400,
-    });
-  };
+
+    const handleClick = (componentId) => {
+      scroller.scrollTo(componentId, {
+        smooth: true,
+        offset: -50,
+        duration: 400,
+      });
+    };
+
+ 
 
   return(
     <>
@@ -20,7 +23,7 @@ export default function Navbar() {
 
         <div>
           <ul className="navbar-nav">
-          <li className="nav-item"  onClick={() => handleClick("Home")}>
+          <li className="nav-item" onClick={props.navbarEnabled ? () => handleClick("Home"): null}>
               <a className="nav-link" href="/#" >
                 Home
               </a>
@@ -29,7 +32,7 @@ export default function Navbar() {
               </span>
 
             </li>
-            <li className="nav-item" onClick={() => handleClick("About")}>
+            <li className="nav-item"  onClick={props.navbarEnabled ? () => handleClick("About"): null}>
               <a className="nav-link" href="/#">
                 About
               </a>
@@ -37,7 +40,7 @@ export default function Navbar() {
               <IconInfoSquare color="#fff" className="nav-icons" /> 
               </span>
             </li>
-            <li className="nav-item" onClick={() => handleClick("Skills")}>
+            <li className="nav-item"  onClick={props.navbarEnabled ? () => handleClick("Skills"): null}>
               <a className="nav-link" href="/#">
                 Skills
               </a>
@@ -45,7 +48,7 @@ export default function Navbar() {
               <IconToolsOff color="#fff" className="nav-icons" />
               </span>
             </li>
-            <li className="nav-item" onClick={() => handleClick("Projects")}>
+            <li className="nav-item"  onClick={props.navbarEnabled ? () => handleClick("Projects"): null}>
               <a className="nav-link" href="/#">
                 Projects
               </a>
@@ -53,7 +56,7 @@ export default function Navbar() {
               <IconAlignBoxCenterStretch color="#fff" className="nav-icons" /> 
               </span>
             </li>
-            <li className="nav-item" onClick={() => handleClick("Contact")}>
+            <li className="nav-item"  onClick={props.navbarEnabled ? () => handleClick("Contact"): null}>
               <a className="nav-link" href="/#">
                 Contact
               </a>

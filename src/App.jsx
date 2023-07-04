@@ -8,19 +8,23 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
+
+  const [navbarEnabled, setNavbarEnabled] = useState(false);
+
   useEffect(() => {
     window.history.scrollRestoration = 'manual'
   }, []);
+
 
   return (
     <>
     <div className="App">
     <div className="stars"></div>
-      <Navbar/>
-      <Home/>
+      <Navbar navbarEnabled={navbarEnabled}/>
+      <Home setNavbarEnabled={setNavbarEnabled}/>
       <About/>
       <Skills/>
       <Projects/> 
