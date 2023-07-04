@@ -1,5 +1,5 @@
 import { IconUser, IconPhone, IconMail } from '@tabler/icons-react';
-import pdf from '../assets/resume.pdf';
+import pdf from '../assets/Resume-Fetero.pdf';
 
 export default function About() {
 
