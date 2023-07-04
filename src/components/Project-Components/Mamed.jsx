@@ -1,13 +1,7 @@
 import {  IconBrandGithub} from '@tabler/icons-react';
 
 export default function Mamed(){
-    const mamedUrls = [
-        '../src/assets/mamed.jpg',
-        '../src/assets/mamed1.jpg',
-        '../src/assets/mamed2.png',
-      ];
-
-
+   
 
     return(
         <>
@@ -18,15 +12,15 @@ export default function Mamed(){
             <span id="item-1" />
             <span id="item-2" />
             <span id="item-3" />
-            <div className="carousel-item item-1" style={{ backgroundImage: `url(${mamedUrls[0]})` }}>
+            <div className="carousel-item item-1" >
             <a href="#item-3" className="arrow-prev arrow" />
             <a href="#item-2" className="arrow-next arrow" />
             </div>
-            <div className="carousel-item item-2" style={{ backgroundImage: `url(${mamedUrls[1]})` }}>
+            <div className="carousel-item item-2" >
             <a href="#item-1" className="arrow-prev arrow" />
             <a href="#item-3" className="arrow-next arrow" />
             </div>
-            <div className="carousel-item item-3" style={{ backgroundImage: `url(${mamedUrls[2]})` }}>
+            <div className="carousel-item item-3" >
             <a href="#item-2" className="arrow-prev arrow" />
             <a href="#item-1" className="arrow-next arrow" />
             </div>

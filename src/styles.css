@@ -454,12 +454,15 @@ body {
     z-index: 2;
     opacity: 1;
     background-size:cover;
+    background-image: url('../src/assets/mamed.jpg')
   }
   .item-2 {
     background-size: cover;
+    background-image: url('../src/assets/mamed1.jpg')
   }
   .item-3 {
     background-size: cover;
+    background-image: url('../src/assets/mamed2.png')
   }
   
   *:target ~ .item-1{
@@ -478,12 +481,17 @@ body {
     z-index: 2;
     opacity: 1;
     background-size: cover;
+    background-image: url('../src/assets/up-game.jpg')
+
   }
   .upitem-2 {
     background-size: cover;
+    background-image: url('../src/assets/up-game1.jpg')
+
   }
   .upitem-3 {
     background-size: cover;
+    background-image: url('../src/assets/up-game2.jpg')
   }
 
   [id^= "upitem"] {
